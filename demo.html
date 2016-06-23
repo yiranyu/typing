@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>typing</title>
+	<style>
+		body{
+			background:#2A2A2A;
+		}
+		section {
+			width:600px;
+			height:300px;
+			margin:100px auto 0;
+			padding:20px;
+			font-size:40px;
+			font-weight:bold;
+			color:#fff;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+	
+	<section id="typing"></section>
+	
+	<script type="text/javascript" src="js/typing.js"></script>
+	<script type="text/javascript">
+		var el=document.getElementById("typing");
+		var options = {
+			isRandomSpeed: false,
+			speed: 300
+		};
+		var typing=new Typing(el,options);
+		typing.add("Simple is the best! Wecome").pause(2000).remove(7);
+	</script>
+</body>
+</html>
